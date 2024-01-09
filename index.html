@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playstation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Game controllers</a></li>
+                    <li><a href="">vr accesories</a></li>
+                    <li><a href="">media remotes</a></li>
+                    <li><a href="">others</a></li>
+
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu" onclick="togglemenu()">
+
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>ps4 v2<br> dualshock 4</h2>
+                <h3>wireless controllers for playstation 4</h3>
+                <p>(COMPOTILE/GENERIC)</p>
+                <h4>$32.50</h4>
+                <button type="button">buy now<img src="images/arrow.png">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="images/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/add.png">
+                    <p><small>ADD TO CART</small></p>
+                </div>
+
+            </div> 
+        </div>
+        <div class="social-link">
+           <img src="images/fb.png">
+           <img src="images/tw.png">
+           <img src="images/ig.png">
+        </div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight ="0px";
+         function togglemenu(){
+            if(menulist.style.maxHeight =="0px")
+            {
+                menulist.style.maxHeight ="130px";
+            }
+            else{
+                menulist.style.maxHeight ="0px";
+            }
+         }
+    </script>
+</body>
+
+</html>
